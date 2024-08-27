@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="iniciar">
+            <textarea
+                name="texto"
+                class="iniciar_texto"
+                id="iniciar_texto"
+                cols="30"
+                rows="10"
+                placeholder="Escriba el texto a encriptar"                
+            ></textarea>
+            <div class="iniciar_instrucciones">
+                <p>Use palabras en minúsculas, sin acentos ni caracteres especiales</p>
+            </div>
+            <div class="iniciar_botones">
+                <button class="boton_encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="boton_desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <img src="./assets/imagen5.png" alt="" id="figura">
+            <button class="boton_copiar" type="button" onclick="copiar()">Copiar</button>
+            <div class="resultado_mensaje">
+                <h2 id="resultado_titulo">No hay texto</h2>
+                <p id="resultado_parrafo">Ingresa el texto en campo encriptador</p>
+                <textarea
+                    name="texto"
+                    class="resultado_texto"
+                    id="resultado_texto"
+                    cols="30"
+                    rows="10"             
+                    readonly="readonly"
+                    disabled="True">
+                </textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
